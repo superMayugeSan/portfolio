@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hiragino Mincho Pro W3", "ヒラギノ明朝 Pro W3", serif;
+    color: #333;
+    line-height: 1.6; /* 行間も少し詰める */
+    font-size: 14px;  /* フォントサイズを14pxに */
+    background: linear-gradient(to bottom, #a4d7f5 0%, #e3f4fc 100%);
+    background-attachment: fixed;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: left;
+    background: transparent;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem; /* 見出しも少し小さめ */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 0.6rem; /* リンク間の間隔を少し詰める */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+a:hover {
+    border-bottom: 1px solid #000;
+}
+
+footer {
+    font-size: 0.75rem; /* フッター文字も小さめ */
+    color: #555;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    header, main, footer {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+}
